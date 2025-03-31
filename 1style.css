@@ -22,6 +22,11 @@
          height: 134px;
          padding: 24px 112px; /* Top padding, Right Padding*/
          flex-shrink: 0;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         z-index: 1000;
              }
 
              /* Logo / Name */
@@ -56,6 +61,11 @@
                          .nav-menus li a:hover {
                              color: #f2f0ef;
                              }
+
+                             .nav-menus li a.active {
+                                border-bottom: 2px solid #fff; /* underline to show it's active */
+                                color: #f2f0ef; /* slight highlight */
+                              }
                                      
 
             /* Contact Button */
@@ -89,6 +99,7 @@
           justify-content: center; /* Centers content horizontally */
             position: relative; /* So we can layer elements if needed */
              color: #fff; /* White text for contrast against black bg */
+             margin-top: 134px;
  }
 
          /* Wrapper for Text + Image */
@@ -376,7 +387,7 @@
                                 }
                                 
                                 .experience-item p {
-                                    font-size: 0.9rem;
+                                    font-size: 13px;
                                     color: #999;
                                     margin-bottom: 0.3rem;
                                 }
