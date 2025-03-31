@@ -6,10 +6,10 @@ This project is a simple HTML and CSS-based portfolio website hosted in a GitHub
 
 ### 2. Development Environment Setup
 To build and maintain this project, the following tools and technologies were used:
+- Figma - for creating wireframe and UI design
 - Visual Studio Code (VS Code) – code editor (HTML5 and CSS3)
 - Git – version control system
 - GitHub – for cloud repository hosting
-- Figma - for creating wireframe and UI design
 <br><br>
 
 #### Installation Steps:
