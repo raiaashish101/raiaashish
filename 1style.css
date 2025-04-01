@@ -5,13 +5,15 @@
        box-sizing: border-box;
              }
 
- body {
-   /* Black background */
+/* Black background */
+body {
+
     background-size: cover;
      background-repeat: no-repeat;
       background-attachment: fixed;
        font-family: 'Poppins', sans-serif;
  }
+
 
  /* Navigation Bar */
  .navbar {
@@ -22,7 +24,7 @@
          height: 134px;
          padding: 24px 112px; /* Top padding, Right Padding*/
          flex-shrink: 0;
-         position: fixed;
+         position: fixed; /* Fixed at the top 👇*/
          top: 0;
          left: 0;
          width: 100%;
@@ -36,8 +38,7 @@
                   font-size: 1.5rem;
                     color: #fff;
                      font-weight: bold;
-                       margin-right: 40px; /* space between "Aashish" and nav links */
-                       background: url('Images/Logo.png') / cover no-repeat;
+                     background: url('/Users/raiaashish/Documents/Sem 2/ADM6012/Logo.png') lightgray 50% / cover no-repeat;
              }
 
              /* Navigation menus */
@@ -50,7 +51,7 @@
              }
 
                  .nav-menus li a {
-                     color: #fff;
+                     color: #a9a9a9;
                      text-decoration: none;
                      font-size: 1rem;
                      font-weight: 500;
