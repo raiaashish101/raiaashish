@@ -7,7 +7,6 @@
 
 /* Black background */
 body {
-
     background-size: cover;
      background-repeat: no-repeat;
       background-attachment: fixed;
@@ -22,7 +21,7 @@ body {
       align-items: center;
        justify-content: flex-start;
          height: 134px;
-         padding: 24px 112px; /* Top padding, Right Padding*/
+         padding: 24px 120px; /* Top/Botton padding, Left/Right Padding*/
          flex-shrink: 0;
          position: fixed; /* Fixed at the top 👇*/
          top: 0;
@@ -34,15 +33,19 @@ body {
              /* Logo / Name */
              .logo {
                width: 101px;
-                height: 78px;   
-                  font-size: 1.5rem;
+                height: 78px;
+                font-family: 'Segoe UI';
+                  font-size: 32px;
+                    padding: 8px 0px; /* Top/Bottom, Left/Right spacing */
                     color: #fff;
                      font-weight: bold;
+                     align-items: center;
+                     justify-content: center;
                      background: url('/Users/raiaashish/Documents/Sem 2/ADM6012/Logo.png') / cover no-repeat;
              }
 
              /* Navigation menus */
-             .nav-menus {
+             .nav-links {
               list-style: none;
                display: flex;
                 gap: 32px;
@@ -50,7 +53,7 @@ body {
                  padding-right: 32px; /* push the 'Contact' button to the right */
              }
 
-                 .nav-menus li a {
+                 .nav-links li a {
                      color: #a9a9a9;
                      text-decoration: none;
                      font-size: 1rem;
@@ -59,11 +62,11 @@ body {
                      }
 
                              
-                         .nav-menus li a:hover {
+                         .nav-links li a:hover {
                              color: #f2f0ef;
                              }
 
-                             .nav-menus li a.active {
+                             .nav-links li a.active {
                                 border-bottom: 2px solid #fff; /* underline to show it's active */
                                 color: #f2f0ef; /* slight highlight */
                               }
@@ -94,7 +97,7 @@ body {
     background-color: #000;
      width: 100%;
       height: 728px;
-       padding: 80px 128px; /* Top/Bottom, Left/Right spacing */
+       padding: 80px 120px; /* Top/Bottom, Left/Right spacing */
         display: normal;
          align-items: center;
           justify-content: center; /* Centers content horizontally */
@@ -124,14 +127,6 @@ body {
                  gap: 16px;
                  flex-shrink: 0;
                    }
-                 .hero-text p1 {
-                    color: #ddd;
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                 }
 
                 .hero-text h1 {
                         color: #FFF;
@@ -234,7 +229,7 @@ body {
 .services {
     background-color: #f9f9f9;
     color: #000;
-    padding: 160px 180px 160px 180px;
+    padding: 160px 120px 160px 120px;
   }
   
         .services-container {
@@ -335,12 +330,12 @@ body {
 .experience {
     background-color: #000; /* Dark background */
     color: #fff;            /* White text */
-    padding: 176px 112px 296px 112px;
+    padding: 176px 120px 296px 120px;
   }
   
             .experience-container {
                 max-width: 1200px;
-                margin: 0 auto;
+                margin: flex;
             }
             
                 .experience-header {
@@ -376,9 +371,9 @@ body {
   
                                 /* Experience items layout */
                                 .experience-items {
-                                    display: grid;
+                                    display: flex;
                                     grid-template-columns: repeat(4, 1fr);
-                                    gap: 64px; /* Space between columns */
+                                    gap: 112px; /* Space between columns */
                                 }
                                 
                                 .experience-item h4 {

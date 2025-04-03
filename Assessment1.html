@@ -20,14 +20,16 @@
     <!-- NAV BAR -->
     <nav class="navbar">
             <!-- Left Section: Logo / Name -->
-            <div class="logo"></div>
+            <div class="logo">
+              Aashish
+            </div>
         
             <!-- Middle Section: Links -->
-            <ul class="nav-menus">
-                <li><a href="#about" class="active">Home</a></li>
+            <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#about">Experience</a></li>
-                <li><a href="#about">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li>
             <!--  <li><a href="#experience">Experience</a></li> -->
             </ul>
         
@@ -37,11 +39,10 @@
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="about">
             <div class="hero-content">
                     <!-- Left side: Text content -->
                             <div class="hero-text">
-                                <p1>Hi, I am Aashish Rai </p1>
                                     <h1>Enhancing Digital Experience with UIUX</h1>
                                         <p2>
                                         Exploring innovative concepts and connecting ideas to 
@@ -95,7 +96,7 @@
     </section>
 
 <!-- SERVICE -->   
-<section class="services">
+<section class="services" id="services">
         <div class="services-container">
         <!-- Left: Image Placeholder -->
         <div class="services-image">
@@ -141,8 +142,6 @@
         </div>
         </div>
   </section>
-
-
 
 <!-- WORK -->  
 <section class="experience" id="experience">
@@ -194,7 +193,6 @@
     </div>
   </section>
 
-
 <!-- FOOTER -->
 <footer class="footer">
     <h3>SOCIAL MEDIA</h3>
@@ -212,6 +210,44 @@
     </div>
     <p>&copy; 2025 Portfolio. All rights reserved.</p>
 </footer>
+
+
+<!-- JavaScript -->
+<script>
+  // Select all sections and nav links
+  // for better user experience
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links li a");
+
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) =>
+      {
+          if (entry.isIntersecting)
+          {
+              // Remove "active" class from all nav links
+              navLinks.forEach(link => link.classList.remove("active"));
+              // Get the section ID
+              const id = entry.target.getAttribute("id");
+              // Add "active" class to the corresponding nav link
+              const activeLink = document.querySelector(`.nav-links li a[href="#${id}"]`);
+              if (activeLink) {
+                activeLink.classList.add("active");
+              }
+          }
+      });
+    },
+    {
+      threshold: 0.6  // Adjust this value based on when you want the section to be considered visible
+    }
+  );
+
+  // Observe each section
+  sections.forEach(section => observer.observe(section));
+
+  
+</script>
 
 
 </body>
