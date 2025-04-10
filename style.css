@@ -98,19 +98,19 @@ body {
             position: relative; /* So we can layer elements if needed */
              margin-top: 140px;
  }
- .try-content {
-    padding: 120px 120px 120px 120px; /* Top, Right, Bottom, Left*/
-      display: flex;
-       align-items: center;
-     }
- .try-content h1 {
-        color: #FFF;
-        font-family: "Inter", sans-serif;
-        font-size: 9rem;
-        font-weight: 440;
-        line-height: 128%; /* 128.571% */
-        letter-spacing: -5px;
-     }
+    .try-content {
+        padding: 120px 120px 120px 120px; /* Top, Right, Bottom, Left*/
+          display: flex;
+          align-items: center;
+        }
+        .try-content h1 {
+                color: #FFF;
+                font-family: "Inter", sans-serif;
+                font-size: 9rem;
+                font-weight: 440;
+                line-height: 128%; /* 128.571% */
+                letter-spacing: -5px;
+            }
      
                                       
  /* Hero Section Container */
