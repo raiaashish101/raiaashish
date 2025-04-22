@@ -89,7 +89,7 @@ body {
                                                                         }
 
 
-  /* TryHERO Section Container */
+  /* HERO Section Container */
  .try {
     background-color: #000;
         display: normal;
@@ -113,7 +113,7 @@ body {
             }
      
                                       
- /* Hero Section Container */
+ /* ABOUT Section Container */
  .hero {
     background-color: #000;
      width: 100%;
@@ -265,7 +265,7 @@ body {
         
                     .services-subtitle {
                         font-size: 16px;
-                        color: #1256D4;
+                        color: #FFC40C;
                         text-transform: uppercase;
                         font-family: "Inter", sans-serif;
                         font-style: normal;
@@ -369,7 +369,7 @@ body {
                 
                 .experience-header h3 {
                     text-transform: uppercase;
-                        color: #1256D4;
+                        color: #FFC40C;
                         margin-bottom: 4px;
                         font-family: "Inter", sans-serif;
                         font-size: 16px;
@@ -381,10 +381,10 @@ body {
                 
                 .experience-header h2 {
                     font-family: "Inter", sans-serif;
-                            font-size: 48px;
+                            font-size: 72px;
                             font-style: normal;
-                            font-weight: 600;
-                            line-height: 56px; /* 116.667% */
+                            font-weight: 440;
+                            line-height: 72px; /* 116.667% */
                             letter-spacing: -0.96px;
                 }
                 
@@ -421,7 +421,7 @@ body {
                                     top: 0px;
                                     width: 14px;
                                     height: 14px;
-                                    background-color: #1256D4;
+                                    background-color: #FFC40C;
                                     border-radius: 20%;
                                 }
                                 .experience-item:hover {
@@ -579,9 +579,9 @@ body {
   }
                     
                     .core-title {
-                        font-size: 48px;
-                        font-weight: 600;
-                        line-height: 1.4;
+                        font-size: 72px;
+                        font-weight: 400;
+                        line-height: 1.1;
                         margin-bottom: 48px;
                         text-align: left;
                     }
@@ -592,7 +592,7 @@ body {
                     
                     .core-section h3 {
                         text-transform: uppercase;
-                        color: #1256D4;
+                        color: #FFC40C;
                         margin-bottom: 4px;
                         font-family: "Inter", sans-serif;
                         font-size: 16px;
@@ -657,8 +657,8 @@ body {
                           }
 
                           .skills-title {
-                            font-size: 48px;
-                            font-weight: 600;
+                            font-size: 72px;
+                            font-weight: 440;
                             line-height: 1.4;
                             margin-bottom: 48px;
                             text-align: left;
